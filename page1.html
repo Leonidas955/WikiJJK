@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojo Satoru</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const url = link.getAttribute("href");
+                    document.body.classList.add("fade-out");
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>SATORU Gojo</h1>
+    <img src="gojo2.jpg" alt="Gojo Satoru" class="large-image">
+    <p class="surname-text">The Honored One</p>
+    <p class="additional-text"> Satoru Gojo, l'un des personnages les plus emblématiques de "Jujutsu Kaisen", est un sorcier à l'apparence frappante. Il est grand et mince, avec des cheveux blancs et des yeux d’un bleu perçant, souvent cachés derrière un bandeau ou des lunettes noires. Né dans la famille Gojo, une des trois grandes familles de sorciers, il a toujours porté le poids des attentes familiales. Son charisme naturel et sa confiance inébranlable en font un leader respecté, malgré son arrogance apparente. </p>
+    <p class="additional-text"> Gojo possède une personnalité complexe. Bien qu'il puisse sembler insouciant et arrogant, cette attitude cache un dévouement profond pour ses amis et ses élèves. Il est connu pour son humour unique et son amour des sucreries. Sur le plan des pouvoirs, Satoru Gojo est quasiment invincible. Il maîtrise le "Mugen" (Infini), créant une barrière d’énergie maudite entre lui et ses ennemis, et possède le "Rikugan" (Sixième Sens), lui permettant de manipuler l’énergie maudite à un niveau microscopique. Sa "Domaine Expansion" intitulée "Sans Limites" plonge ses adversaires dans un état de terreur et de confusion, en les submergeant d'informations infinies.</p>
+    <a href="index.html">Retour à l'accueil</a>
+</body>
+</html>

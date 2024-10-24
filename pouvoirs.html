@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouvoirs</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Effet d'entrée
+            document.body.classList.add("fade-in");
+
+            // Effet de sortie
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const url = link.getAttribute("href");
+                    document.body.classList.add("fade-out");
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Les pouvoirs occultes</h1>
+    <a href="index.html" class="back-link">Retour à l'accueil</a> <!-- Lien de retour à l'accueil -->
+</body>
+</html>

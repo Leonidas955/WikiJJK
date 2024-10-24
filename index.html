@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Wiki JJK</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+           
+            const body = document.body;
+            body.classList.add("fade-in");
+
+         
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault(); 
+                    const url = link.getAttribute("href"); 
+                    body.classList.add("fade-out"); 
+
+                    
+                    setTimeout(() => {
+                        window.location.href = url; 
+                    }, 500); 
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Bienvenue sur le Wiki de JJK</h1>
+    <div class="banner">
+        <a href="resumer.html" class="banner-item">Résumé de l'œuvre</a>
+        <a href="pouvoirs.html" class="banner-item">Explication des pouvoirs</a>
+        <a href="manga.html" class="banner-item">Le Manga</a>
+        <a href="https://discord.gg/X6dBeE4WPR" class="banner-item">Discord</a>
+        <a href="support.html" class="banner-item">Support</a>
+    </div>
+    <h2 class="subtitle">Votre source d'informations sur les personnages Jujutsu Kaisen</h2>
+    <p class="intro-message">Bienvenue sur le wiki "Jujutsu Kaisen" ! Ici, vous trouverez tout ce qu'il y a à savoir sur les personnages de cet univers fascinant. Que vous soyez un fan fervent ou un nouveau venu curieux, ce wiki est votre ressource ultime pour explorer les moindres détails des héros et des vilains de "Jujutsu Kaisen". Plongez-vous dans les biographies complètes, découvrez les capacités extraordinaires et les histoires captivantes de vos personnages préférés.</p>
+    <p class="intro-message">Il y a tellement de choses à découvrir ! Tu veux te lancer dans un autre personnage maintenant?</p>
+    <div class="image-container">
+        <a href="page1.html">
+            <img src="gojo.jpg" alt="Image 1">
+            <p class="image-caption">Gojo Satoru</p>
+        </a>
+        <a href="page2.html">
+            <img src="sukuna.jpg" alt="Image 2">
+            <p class="image-caption">Ryomen Sukuna</p>
+        </a>
+        <a href="page3.html">
+            <img src="toji.jpg" alt="Image 3">
+            <p class="image-caption">Fushiguro Toji</p>
+        </a>
+        <a href="page4.html">  
+            <img src="yuji.jpg" alt="Image 4"> 
+            <p class="image-caption">Itadori Yuji</p> 
+        </a>
+    </div>
+    <h2></h2>
+    <div class="image-container">
+        <a href="page5.html">
+            <img src="kenjaku.jpg" alt="Image 5">
+            <p class="image-caption">Kenjaku</p>
+        </a>
+        <a href="page6.html">
+            <img src="megumi.jpg" alt="Image 6">
+            <p class="image-caption">Fushiguro Megumi</p>
+        </a>
+        <a href="page7.html"> <!-- Corrigé ici pour que l'attribut href soit valide -->
+            <img src="kashimo.jpg" alt="Image 7">
+            <p class="image-caption">Hajime Kashimo</p>
+        </a>
+        <a href="page8.html"> <!-- Corrigé ici pour que l'attribut href soit valide -->
+            <img src="nanami.jpg" alt="Image 8">
+            <p class="image-caption">Kento Nanami</p>
+        </a>
+    </div>
+    <h1></h1>
+<div class="image-container">
+    <a href="page9.html">
+        <img src="maki.jpg" alt="Image 9" class="image"> <!-- Ajout de la classe "image" -->
+        <p class="image-caption">Maki Zenin</p>
+    </a>
+    <a href="page10.html">
+        <img src="toge.jpg" alt="Image 9" class="image"> <!-- Ajout de la classe "image" -->
+        <p class="image-caption">Inumaki Toge</p>
+    </a>
+</div>
+    
+</body>
+</html>
